@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quest for Gold and Girl</title>
+    <script src="js/phaser.min.js"></script>
+    <script src="js/Boot.js"></script>
+    <script src="js/Preloader.js"></script>
+    <script src="js/MainMenu.js"></script>
+    <script src="js/Game.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<script>
+(function() {
+		var game = new Phaser.Game( 800, 600, Phaser.AUTO, 'game');
+    game.state.add('Boot', boot);
+    game.state.add('Preloader', preloader);
+    game.state.add('MainMenu', mainmenu);
+    game.state.add('Game', main);
+    game.state.start('Boot');
+    })();
+</script>
+<div id="game"></div>
+<div id="readme">
+<h2>Valen Quest</h2>
+<ul>
+
+<li><strong>High Concept:</strong>
+A simple turn-based RPG with a Valentine's Day themed story.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Experience the joy of turn-based RPG gameplay in its simplest form.
+</li>
+
+<li><strong>Genre:</strong>
+Turn-based Menu RPG
+</li>
+
+<li><strong>Game play:</strong>
+Use the mouse to navigate menus, buy items and equipment, and select battle actions. In battle, selecting the 'counter' action gives you a 20% chance of deflecting enemy attack and retaliating with 500% damage. Failing the counter makes the player take 50% more damage. Attacking subtracts player's attack stat from the enemy's HP, but has a 10% miss rate. Successful attacks increase the counter chance by 5% up to 35%. Using the counter action resets the counter chance to 20%. Running will end the battle and send the player back to town with full health, but the player loses 25% of their total gold. The player can buy items and equipment at the shop or choose to battle a monster. The goal is to accumulate enough gold to buy the ring in the shop. If the player gets the ring or dies, the game is over.
+</li>
+
+<li><strong>Prototype goal:</strong>
+Explore game states and menu navigation, as well as light RPG mechanics.
+</li>
+
+<li><strong>Features:</strong>
+Simple turn-based RPG gameplay.
+</li>
+
+<li><strong>Setting/Premise:</strong>
+A simple town where the player needs to quickly gain money to buy a ring by defeating monsters.
+</li>
+
+<li><strong>Story:</strong>
+You want to buy a ring for your lover, but you don't have enough money! Valentine's Day is around the corner, and the fastest way to get money is killing monsters. Harder monsters give you more money, so save up, get better equipment, and get that ring!
+</li>
+
+<li><strong>Target Audience:</strong>
+Everyone 10 and up who has interest in turn-based RPGs, flash games, or Valentine's Day.
+</li>
+
+<li><strong>Play time:</strong>
+2-5 mins.
+</li>
+
+<li><strong>Strategies:</strong>
+Start small and try to build up money, buying better equipment and potions when necessary. Be prepared with potions and only use them when you're near death. Sometimes taking risks is necessary.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Valin quest logos, texts, and loading screen created from  http://www.webestools.com/web20-title-generator-logo-title-maker-online-web20-effect-reflect-free-photoshop.html
+Music - 
+Town: http://opengameart.org/content/stepping-stones 
+Shop: http://opengameart.org/content/enchanted-festival 
+Buy: http://opengameart.org/content/coins-sounds
+Error: http://opengameart.org/content/gonk-gong
+Battle1: http://opengameart.org/content/sigil 
+Battle2:  http://opengameart.org/content/rpg-battle-theme-the-last-encounter-0 
+Victory and Ending:  http://opengameart.org/content/lively-meadow-victory-fanfare-and-song 
+Battle sound effects:  https://www.freesound.org/people/Ekokubza123/sounds/104183/ 
+https://www.freesound.org/people/qubodup/sounds/211634/ 
+Sprites: 
+http://opengameart.org/content/antifareas-rpg-sprite-set-1-enlarged-w-transparent-background-fixed 
+Shopkeeper credit to Tabi no Yadokari: 
+https://vxresource.files.wordpress.com/2013/02/face_w2_blu1.png
+Background: http://www.gdunlimited.net/forums/gallery/image/1216-battle-background-1/
+Monster 1 by Redshrike and William: http://opengameart.org/content/lpc-goblin 
+Monster 2:  http://opengameart.org/content/ninja-adventure-free-sprite
+Monster 3: http://opengameart.org/content/dorver-monster
+Slash:  http://img.photobucket.com/albums/v432/Lizardcommando/maverick%20hunter%20sprites/mh-misc.gif
+Town picture from Dragon Quest IX https://rpgsquare.files.wordpress.com/2013/01/dragon-quest-ix-town-2.jpg
+Cat picture from anime MajiMoji Rurumo
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Coding methods taken from http://www.emanueleferonato.com/2014/08/28/phaser-tutorial-understanding-phaser-states/
+http://examples.phaser.io/_site/view_full.html?d=loader&f=load+events.js&t=load%20events
+
+</li>
+
+</ul>
+</div>
+</body>
+</html>

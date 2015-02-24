@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Super Organ Party</title>
+    <script src="js/phaser.min.js"></script>
+    <script src="js/Boot.js"></script>
+    <script src="js/Preloader.js"></script>
+    <script src="js/MainMenu.js"></script>
+    <script src="js/Game.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<script>
+(function() {
+		var game = new Phaser.Game( 800, 600, Phaser.AUTO, 'game');
+    game.state.add('Boot', boot);
+    game.state.add('Preloader', preloader);
+    game.state.add('MainMenu', mainmenu);
+    game.state.add('Game', main);
+    game.state.start('Boot');
+    })();
+</script>
+<div id="game"></div>
+<div id="readme">
+<h2>Super Organ Party</h2>
+<ul>
+
+<li><strong>High Concept:</strong>
+Fight monsters, acquire gold, buy equipment, and work towards purchasing the organ you need for your dying child.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+An RPG themed board game played on the computer, up to four players.
+</li>
+
+<li><strong>Genre:</strong>
+RPG themed board game.
+</li>
+
+<li><strong>Game play:</strong>
+Players use arrow keys to navigate menus and move spaces on the game board. Spacebar has various interactions, like rolling the die or selecting from the menus. Players can roll a die, use potions before combat, fight or run during combat, move spaces on the board, buy items and equipment from shops, and purchase the organ they need from the black market in order to win.
+</li>
+
+<li><strong>Prototype goal:</strong>
+Create a board game where players can navigate menus and move spaces using keyboard controls.
+</li>
+
+<li><strong>Features:</strong>
+Keyboard controlled menu navigation, dice rolling, multiplayer, and RPG themes.
+</li>
+
+<li><strong>Setting/Premise:</strong>
+A land filled with monsters, shops, and a black market specializing in selling organs.
+</li>
+
+<li><strong>Story:</strong>
+You have come to this land searching for the organ that will save your dying child. There is a black market selling the organ that you need, but you don't have enough gold. You must take up arms and defeat monsters to acquire enough gold in order to purchase the organ and save your child.
+</li>
+
+<li><strong>Target Audience:</strong>
+Everyone 10 and up who has interest in board games, RPGs, and organs.
+</li>
+
+<li><strong>Play time:</strong>
+5-10 mins.
+</li>
+
+<li><strong>Strategies:</strong>
+Start small and try to build up money, buying better equipment and potions when necessary. Be prepared with potions and only use them when you're near death.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+
+</li>
+
+</ul>
+</div>
+</body>
+</html>
