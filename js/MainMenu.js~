@@ -6,7 +6,7 @@ var mainmenu = function(game) {
 mainmenu.prototype = {
 		create: function() {
 				title = this.add.sprite(0, 0, 'title');
-				start = this.add.button(350, 540, 'start', this.play, this); 
+				start = this.add.button(350, 510, 'start', this.play); 
 		},
 		play: function() {
 				this.game.state.start('Game');

@@ -8,8 +8,32 @@ preloader.prototype = {
 				this.load.setPreloadSprite(loadbar);
 				this.load.image('title', 'assets/title.png');
 				this.load.image('start', 'assets/start.png');
+				this.load.image('board', 'assets/board.png');
+				this.load.image('startScreen', 'assets/startScreen.png');
+				this.load.spritesheet('pointer', 'assets/pointer.png', 15, 15);
+				//dice
+				this.load.image('die0', 'assets/die0.png');
+				this.load.image('die1', 'assets/die1.png');
+				this.load.image('die2', 'assets/die2.png');
+				this.load.image('die3', 'assets/die3.png');
+				this.load.image('die4', 'assets/die4.png');
+				this.load.image('die5', 'assets/die5.png');
+				this.load.image('die6', 'assets/die6.png');
+				//sprites
+				this.load.spritesheet('p1', 'assets/p1.png', 89, 100);
+				this.load.spritesheet('p2', 'assets/p2.png', 89, 100);
+				this.load.spritesheet('p3', 'assets/p3.png', 89, 100);
+				this.load.spritesheet('p4', 'assets/p4.png', 89, 100);
+				//shop and UI
+				this.load.image('shop', 'assets/shop.png');
+				this.load.image('UI', 'assets/UI.png');
+				this.load.image('select', 'assets/select.png');
+				//audio
+				this.load.audio('beep', 'assets/beep.mp3');
+				this.load.audio('selectSFX', 'assets/select.mp3');
+				this.load.audio('music', 'assets/music.mp3');
 		},
 		create: function() {
-				this.game.state.start('MainMenu');
+				this.state.start('MainMenu');
 		}
 }
