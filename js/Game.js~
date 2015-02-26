@@ -625,11 +625,11 @@ main.prototype = {
 		battle4: function() {
 				this.rollDice();
 				this.hideDice();
-				if(roll.r1 < 4) {
+				if(roll.r1 < 6) {
 						p[index].Mname = "Gunslinger";
 						p[index].Mhp = 1300;
 						p[index].Matt = 300;
-						p[index].Mgold = 4000;
+						p[index].Mgold = 20000;
 				} else {
 						p[index].Mname = "Sword Master";
 						p[index].Mhp = 2000;

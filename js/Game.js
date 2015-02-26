@@ -204,7 +204,7 @@ main.prototype = {
 				p[4].visible = false;
 		},
 		updatePlayer: function() {
-				UI.bot.text.setText("Player " + index + " Stats:\n        Current HP: " + p[index].HP + "           Attack: " + p[index].att + "        Gold: " + p[index].gold + "\n        Mex HP: " + p[index].MaxHP + "       20 HP Potions: " + p[index].pot1 + "       150 HP Potions: " + p[index].pot2 + "       500 HP Potions: " + p[index].pot3);
+				UI.bot.text.setText("Player " + index + " Stats:\n        Current HP: " + p[index].HP + "           Attack: " + p[index].att + "        Gold: " + p[index].gold + "\n        Max HP: " + p[index].MaxHP + "       20 HP Potions: " + p[index].pot1 + "       150 HP Potions: " + p[index].pot2 + "       500 HP Potions: " + p[index].pot3);
 		},
 		playerTurn: function() { // initialize turn params
 				this.hidePlayers();
