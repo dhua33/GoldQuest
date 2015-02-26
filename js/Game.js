@@ -450,16 +450,16 @@ main.prototype = {
 								p.price = 700;
 								p.stat = 1000;
 						} else {
-								p.stat = 0;
+								p.stat = 1000;
 								p.price = 50000;
 						}
 						if(p[index].gold < p.price) {
 								UI.Mtext.setText("\nYou don't have enough gold");
+						} else if (pointer.cameraOffset.y === selectArrayY[3]) {
+										this.win(); 
 						} else if(p[index].MaxHP >= p.stat) {
 								UI.Mtext.setText("\nYou don't need that armor");
 						} else {
-								if(pointer.cameraOffset.y === selectArrayY[3])
-										this.win();
 								UI.Mtext.setText("\nYou bought " + p.item);
 								sounds.select.play();
 								p[index].gold -= p.price;
@@ -481,16 +481,16 @@ main.prototype = {
 								p.price = 825;
 								p.stat = 680;
 						} else {
-								p.stat = 0;
+								p.stat = 1000;
 								p.price = 50000;
 						}
 						if(p[index].gold < p.price) {
 								UI.Mtext.setText("\nYou don't have enough gold");
+						} else if (pointer.cameraOffset.y === selectArrayY[3]) {
+										this.win(); 
 						} else if(p[index].att >= p.stat) {
 								UI.Mtext.setText("\nYou don't need that weapon");
-						} else {
-								if(pointer.cameraOffset.y === selectArrayY[3])
-										this.win();
+						}  else {
 								UI.Mtext.setText("\nYou bought a " + p.item);
 								sounds.select.play();
 								p[index].gold -= p.price;
@@ -728,6 +728,7 @@ main.prototype = {
 						this.pot3();
 				} else {
 						UI.Mtext.setText("You ran from battle\nPress space to end your turn");
+						sounds.select.play();
 						UI.select.visible = false;
 						UI.select.text.visible = false;
 						pointer.visible = false;
